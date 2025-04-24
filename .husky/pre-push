@@ -1,0 +1,4 @@
+# Generate Prisma Client for the Actor service app
+# yarn prisma generate
+# # Run tests
+# yarn test
