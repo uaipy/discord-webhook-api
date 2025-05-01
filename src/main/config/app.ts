@@ -1,9 +1,11 @@
+import 'dotenv/config';
+
+import setupMiddlewares from '@app/main/config/middlewares';
+import setupRoutes from '@app/main/config/routes';
 import express, { Express } from 'express';
 
-import router from '../routes';
-
 const app: Express = express();
-
-app.use(router);
+setupMiddlewares(app);
+setupRoutes(app);
 
 export default app;
